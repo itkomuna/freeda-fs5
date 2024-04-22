@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #444645;
 }
 
 h1, h2, h3, h4 {
@@ -30,6 +32,11 @@ a {
   transition: 0.3s linear;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -45,6 +52,14 @@ a {
 .btn-yellow {
   background: #FACB36;
   color: #444645;
+}
+
+.py {
+  padding: 80px 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 nav {
@@ -80,8 +95,6 @@ nav .container ul a:hover {
   position: relative;
 }
 .mainHeader img {
-  width: 100%;
-  display: block;
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -94,4 +107,29 @@ nav .container ul a:hover {
 }
 .mainHeader hgroup p {
   padding: 20px 0 40px 0;
+}
+
+.ponuda h2 {
+  color: #FACB36;
+}
+.ponuda h2 + p {
+  padding: 25px 0 76px 0;
+}
+.ponuda article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ponuda article div {
+  flex: 0 0 32%;
+}
+.ponuda article div img {
+  border: 5px solid #FACB36;
+  border-radius: 100%;
+}
+.ponuda article div h3 {
+  margin: 45px 0 10px 0;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

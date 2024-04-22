@@ -3,12 +3,14 @@
 
 // basics
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: $bodyFont;
+    font-weight: 300;
+    color: $text;
 }
 h1, h2, h3, h4 {
     font-family: $headingsFont;
@@ -26,6 +28,10 @@ a {
     text-decoration: none;
     transition: $transition;
 }
+img {
+    width: 100%;
+    display: block;
+}
 .container {
     max-width: 1140px;
     width: 100%;
@@ -39,4 +45,30 @@ a {
 .btn-yellow {
     background: $accents;
     color: $text;
+}
+.py {
+    padding: 80px 0;
+}
+.text-center {
+    text-align: center;
+}
+// nav
+nav {
+    position: fixed;
+    background: rgba($black, .8);
+    width: 100%;
+    z-index: 100;
+    .container {
+        @include flex;
+        ul {
+            @include flex;
+            a {
+                color: $accents;
+                margin-left: 50px;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
 }

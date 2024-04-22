@@ -2,26 +2,6 @@
 @import 'mixins';
 @import 'globals';
 
-// nav
-nav {
-    position: fixed;
-    background: rgba($black, .8);
-    width: 100%;
-    z-index: 100;
-    .container {
-        @include flex;
-        ul {
-            @include flex;
-            a {
-                color: $accents;
-                margin-left: 50px;
-                &:hover {
-                    color: $white;
-                }
-            }
-        }
-    }
-}
 .mainHeader {
     // background-image: url(img/coffee-slajd-1.jpg);
     // background-position: center;
@@ -31,8 +11,6 @@ nav {
     color: $white;
     position: relative;
     img {
-        width: 100%;
-        display: block;
         height:800px;
         object-fit: cover;
     }
@@ -46,4 +24,28 @@ nav {
         }
     }
 
+}
+
+// ponuda
+.ponuda {
+    h2 {
+        color: $accents;
+        & + p {
+            padding: 25px 0 76px 0;
+        }
+    }
+    article {
+        @include flex;
+        div {
+            flex: 0 0 32%;
+            img {
+                border: 5px solid $accents;
+                border-radius: 100%;
+            }
+            h3 {
+                margin: 45px 0 10px 0;
+                font-size: 24px;
+            }
+        }
+    }
 }
