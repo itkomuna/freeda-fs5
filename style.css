@@ -23,6 +23,10 @@ h2 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 27px;
+}
+
 ul {
   list-style: none;
 }
@@ -132,4 +136,88 @@ nav .container ul a:hover {
 .ponuda article div h3 {
   margin: 45px 0 10px 0;
   font-size: 24px;
+}
+
+.meni {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.meni div h2 {
+  color: #FACB36;
+}
+.meni div:first-child {
+  flex: 0 0 60%;
+}
+.meni div:first-child .row {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.meni div:first-child .row .menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 50%;
+  margin-bottom: 40px;
+}
+.meni div:first-child .row .menu-item .img {
+  flex: 0 0 40%;
+}
+.meni div:first-child .row .menu-item .img img {
+  width: 100px;
+  border-radius: 100%;
+}
+.meni div:first-child .row .menu-item .text {
+  flex: 0 0 60%;
+}
+.meni div:first-child .row .menu-item .text h3 {
+  color: #FACB36;
+}
+.meni div:first-child .row .menu-item .text p {
+  color: white;
+  padding: 10px 0;
+}
+.meni div:first-child .row .menu-item .text span {
+  color: #FACB36;
+  font-weight: bold;
+}
+.meni div:last-child {
+  flex: 0 0 40%;
+}
+
+.usluge h2 {
+  color: #FACB36;
+}
+.usluge h2 + p {
+  padding: 25px 0 76px 0;
+}
+.usluge article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.usluge article div {
+  flex: 0 0 50%;
+}
+.usluge article div:last-child {
+  background: #FCF4EA;
+  padding: 100px 50px 50px 50px;
+}
+.usluge article div:last-child h3 {
+  color: #FACB36;
+  margin-bottom: 10px;
+}
+.usluge article:nth-child(even) {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=style.css.map */

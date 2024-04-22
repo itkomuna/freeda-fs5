@@ -49,3 +49,77 @@
         }
     }
 }
+
+// meni
+.meni {
+    background: $black;
+    @include flex;
+    div {
+        h2 {
+            color: $accents;
+        }
+        &:first-child {
+            flex: 0 0 60%;
+            .row {
+                padding: 100px;
+                @include flex;
+                .menu-item {
+                    @include flex;
+                    flex: 0 0 50%;
+                    margin-bottom: 40px;
+                    .img {
+                        img {
+                            width: 100px;
+                            border-radius: 100%;
+                        }
+                        flex: 0 0 40%;
+                    }
+                    .text {
+                        flex: 0 0 60%;
+                        h3 {
+                            color: $accents;
+                        }
+                        p {
+                            color: $white;
+                            padding: 10px 0;
+                        }
+                        span {
+                            color: $accents;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            flex: 0 0 40%;
+        }
+    }
+}
+
+// usluge
+.usluge {
+    h2 {
+        color: $accents;
+        & + p {
+            padding: 25px 0 76px 0;
+        }
+    }
+    article {
+        @include flex($align: stretch);
+        div {
+            flex:  0 0 50%;
+            &:last-child {
+                background: $bg;
+                padding: 100px 50px 50px 50px;
+                h3 {
+                    color: $accents;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
